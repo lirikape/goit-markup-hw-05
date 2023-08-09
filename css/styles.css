@@ -92,6 +92,7 @@ body {
 .current {
   position: relative;
   color: var(--ocean);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   position: absolute;
@@ -101,6 +102,8 @@ body {
   content: '';
   background-color: var(--ocean);
   margin-top: 20px;
+  bottom: -1px;
+  border-radius: 2px;
 }
 .nav-list {
   display: flex;
@@ -135,7 +138,9 @@ body {
   color: var(--ocean);
 }
 /* header contacts */
-
+.contact {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contacts-list {
   font-style: normal;
   display: flex;
@@ -199,6 +204,7 @@ body {
   border-radius: 4px;
   background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button_or:hover,
 .button_or:focus {
@@ -312,6 +318,7 @@ body {
 .section-team-items {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-team-link {
   width: 100%;
@@ -354,6 +361,8 @@ body {
 .customers-item {
   width: calc((100% - 120px) / 6);
   height: 88px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
@@ -458,19 +467,18 @@ body {
   background-color: var(--navyblue);
   outline: none;
   padding: 8px 16px;
-  color: var(--white, #FFF);
-font-family: Roboto;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 200% */
-letter-spacing: 0.48px;
+  color: var(--white, #fff);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.48px;
   border-radius: 4px;
-border: 1px solid var(--white, #FFF);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-width: 264px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 264px;
 }
-
 
 /* porfolio */
 /* main */
@@ -611,6 +619,7 @@ width: 264px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  width: 100%;
 }
 
 .backdrop.is-hidden .modal {
