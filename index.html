@@ -396,7 +396,7 @@
                 <p class="footer-media-p">Subscribe</p>
                 <form class="footer-form">
                     <label class="footer-label">
-                       
+
                         <input class="footer-input" type="email" name="subscribe" placeholder="E-mail" />
                     </label>
                     <button class="button-sub" type="submit">Subscribe
@@ -409,9 +409,9 @@
         </div>
     </footer>
     <!-- modal window -->
-    <div class="backdrop is-hidden modal" data-modal>
+    <div class="backdrop is-hidden " data-modal>
 
-       
+        <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black"></use>
@@ -429,7 +429,7 @@
                         </svg>
                     </div>
                 </div>
-<!-- phone row -->
+                <!-- phone row -->
                 <div class="modal-label">
                     <label for="user-name" class="modal-text">Phone</label>
                     <div class="modal-row">
@@ -439,7 +439,7 @@
                         </svg>
                     </div>
                 </div>
-<!-- email row -->
+                <!-- email row -->
                 <div class="modal-label">
                     <label for="user-name" class="modal-text">Email</label>
                     <div class="modal-row">
@@ -449,16 +449,15 @@
                         </svg>
                     </div>
                 </div>
-<!-- textarea -->
+                <!-- textarea -->
                 <div class="modal-label-textare">
                     <label for="user-comment" class="modal-text">Comments</label>
                     <textarea id="user-comment" class="textarea-form " name="user-comment" rows="6"
                         placeholder="Text input"></textarea>
                 </div>
-<!-- checkbox -->
+                <!-- checkbox -->
                 <div class="form-checkbox">
-                    <input type="checkbox" class="visually-hidden" name="user-privacy" value="true"
-                        id="user-privacy">
+                    <input type="checkbox" class="visually-hidden" name="user-privacy" value="true" id="user-privacy">
                     <label for="user-privacy" class="form-label">
                         I accept the terms and conditions of the
                         <span class="modal-licence-accent">
@@ -473,8 +472,8 @@
             </form>
 
             <!-- here was /form -->
+        </div>
 
-        
     </div>
 
     <script src="./js/modal.js"></script>
