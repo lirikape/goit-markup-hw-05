@@ -666,7 +666,7 @@ input:focus + .modal-svg {
 .form-checkbox {
   margin-bottom: 24px;
 }
-.cb-active:checked {
+input[type="checkbox"]:checked + .modal-licence-accent {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud)
